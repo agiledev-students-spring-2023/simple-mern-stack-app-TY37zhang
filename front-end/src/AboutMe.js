@@ -37,6 +37,7 @@ const AboutMe = props => {
 
             <h2>{AboutMeData.map(AboutMeData => AboutMeData.name)}</h2>
             <p>{AboutMeData.map(AboutMeData => AboutMeData.desc)}</p>
+            <p>{AboutMeData.map(AboutMeData => AboutMeData.desc2)}</p>
         </>
     )
 }

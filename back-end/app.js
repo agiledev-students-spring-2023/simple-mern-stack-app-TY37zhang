@@ -58,10 +58,10 @@ app.get('/messages/:messageId', async (req, res) => {
   }
 })
 
-app,get('/aboutme', async (req, res) => {
+app.get('/aboutme', async (req, res) => {
   const me = [{
     name:"Tianyin (Ty) Zhang",
-    
+
     imageUrl:"https://avatars.githubusercontent.com/u/83420931?v=4",
 
     desc:"I am a senior at NYU studying computer science. I have a Maine Coon cat called Pidan. I love to do some street photography when I have time. And ride my PEVs.",

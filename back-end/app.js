@@ -57,6 +57,20 @@ app.get('/messages/:messageId', async (req, res) => {
     })
   }
 })
+
+app,get('/aboutme', async (req, res) => {
+  const me = [{
+    name:"Tianyin (Ty) Zhang",
+    
+    imageUrl:"https://avatars.githubusercontent.com/u/83420931?v=4",
+
+    desc:"I am a senior at NYU studying computer science. I have a Maine Coon cat called Pidan. I love to do some street photography when I have time. And ride my PEVs.",
+
+    isRobot: false,
+  }]
+  return res.json(me);
+})
+
 // a route to handle logging out users
 app.post('/messages/save', async (req, res) => {
   // try to save the message to the database
